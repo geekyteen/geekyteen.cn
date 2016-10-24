@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 2em;
+}
+
+/* .home-header */
+
+.home-header {
+    display: block;
+    height: 45vh;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.home-header h1 {
+    font-size: 3em;
+}
+
+.home-header h1, .home-header h2 {
+    line-height: 2em;
+}
+
+.home-header a {
+    line-height: 1.7em;
+}
+
+/* .boxes-container, .boxes, .box */
+
+.boxes-container h2 {
+    margin: 1rem;
+}
+
+.boxes {
+    display: block;
+    margin: 1rem;
+
+}
+
+.box {
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    border: 5px solid #333;
+    width: 25%;
+    height: 10rem;
+}
+
+.box-bordered {
+    text-align: center;
+    line-height: 10rem;
+}
