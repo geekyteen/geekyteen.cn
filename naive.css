@@ -45,22 +45,54 @@
     box-sizing: border-box;
     float: left;
     margin: 0;
-    border: 5px solid #333;
+    padding: 7px;
     width: 25%;
     height: 14rem;
+    overflow: hidden;
+    transition: .7s all ease;
+}
+
+.box:hover {
+    padding: 1rem;
+}
+
+.box-green {
+    background-image: linear-gradient(35deg, rgb(212, 246, 134), rgb(13, 215, 25));
+}
+
+.box-blue {
+    background-image: linear-gradient(35deg, rgb(88, 86, 214), rgb(52, 170, 220));
+}
+
+.box-blue:not(.box-bordered) {
+    color: #fff;
 }
 
 .box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: inherit;
 }
 
-.box .details {
-    top: 0;
+.box:hover img {
+    height: 40%;
+}
+
+.box:not(.box-bordered) .details {
+    margin-top: 1rem;
 }
 
 .box-bordered {
     text-align: center;
-    line-height: 14rem;
+    line-height: calc(14rem - 14px);
+}
+
+.box-bordered .details {
+    height: 100%;
+    background: #fff;
+}
+
+.box-bordered:hover {
+    line-height: 12rem;
 }
