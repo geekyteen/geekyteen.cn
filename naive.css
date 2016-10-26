@@ -41,7 +41,12 @@
 .boxes {
     display: block;
     margin: 1rem;
+}
 
+.boxes:before, .boxes:after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .box {
@@ -99,4 +104,10 @@
 
 .box-bordered:hover {
     line-height: 12rem;
+}
+
+/* Utils */
+
+.text-center {
+    text-align: center;
 }
