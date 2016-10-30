@@ -158,10 +158,22 @@
 .box-bordered .details {
     height: 100%;
     background: #fff;
+    color: #333;
 }
 
 .box-bordered:hover {
     line-height: 12rem;
+}
+
+/* .footer */
+
+.footer {
+    color: #fff;
+    background-image: linear-gradient(-135deg, rgb(109, 226, 155), rgb(175, 159, 234));
+}
+
+.footer a {
+    color: #fff;
 }
 
 /* Utils */
